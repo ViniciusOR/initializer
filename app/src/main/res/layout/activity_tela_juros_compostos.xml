@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaJurosCompostos"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/telaJurosCompostosEditTextCapital"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:maxLength="4"
+        android:fontFamily="casual"
+        android:hint="@string/digite_o_capital"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/telaJurosCompostosEditTextTaxa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/telaJurosCompostosEditTextTaxa"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:maxLength="5"
+        android:hint="@string/digite_a_taxa"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/TelaJurosCompostosEditTextPeriodo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/TelaJurosCompostosEditTextPeriodo"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/digite_o_periodo"
+        android:maxLength="5"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/telaJurosCompostosButtonCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/telaJurosCompostosButtonCalcular"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="255dp"
+        android:background="@drawable/background_button"
+        android:text="Calcular!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/telaJurosCompostosButtonLimpar"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_button_delete"
+        android:text="Limpar!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telaJurosCompostosButtonCalcular" />
+
+    <TextView
+        android:id="@+id/telaJurosCompostosTextViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TelaJurosCompostosTextViewResultadoJuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

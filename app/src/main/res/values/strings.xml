@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">InitializerProject</string>
+    <string name="montante">Montante</string>
+    <string name="montante_de">Montante de...</string>
+    <string name="digite_o_capital">Digite o capital</string>
+    <string name="digite_a_taxa">Digite a taxa</string>
+    <string name="digite_o_periodo">Digite o período</string>
+    <string name="juros_de">Juros de...</string>
+    <string name="juro_exato">Juro exato</string>
+    <string name="juro_comercial">Juro comercial</string>
+    <string name="digite_o_montante">Digite o montante</string>
+    <string name="desconto_racional">Desconto Racional</string>
+    <string name="valor_real">Valor real</string>
+    <string name="desconto_comercial">Desconto Comercial</string>
+    <string name="valor_descontado_comercial">Valor descontado comercial</string>
+    <string name="para_qual_periodo">Para qual período?</string>
+    <string name="digite_o_per_odo_atual">Digite o período atual</string>
+    <string name="digite_a_taxa_administrativa">Digite a taxa administrativa</string>
+    <string name="digite_a_capitaliza_o">Digite a capitalização</string>
+    <string name="digite_seu_email">Digite seu email</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="conta_adicionada">Conta adicionada à sua lista!</string>
+    <string name="conta_nao_possivel_adicionar">Não foi possível salvar a operação!</string>
+    <string name="como_deseja_proceder">Como deseja proceder?</string>
+    <string name="preencha_corretamente">Por favor, preencha corretamente para efetuar o cálculo.</string>
+    <string name="erro_ao_consultar">Erro ao consultar operações salvas.</string>
+    <string name="home">Home</string>
+    <string name="minha_lista">Minha lista</string>
+    <string name="conta">Conta</string>
+    <string name="nao_ha_operacoes">Não há operações no sistema!</string>
+    <string name="operacao_removida">Operação removida com sucesso!</string>
+    <string name="recurso_indisponivel">Recurso Disponível em breve. Você não quer errar as contas e a gente também não.</string>
+    <string name="construcao">Em construção</string>
+    <string name="info">Info</string>
+</resources>

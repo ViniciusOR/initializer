@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaLista"
+    android:background="@drawable/background">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/TelaListaRecyclerViewContas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/linha_calculadora"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pro.midev.expandedmenulibrary.ExpandedMenuView
+        android:id="@+id/expandableMenuViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:em_background_color="@drawable/background_menu"
+        app:em_close_menu_icon="@drawable/ic_close_black_24dp"
+        app:em_font_family="casual"
+        app:em_is_on_click_closable="true"
+        app:em_menu_icon="@drawable/ic_format_list_bulleted_black_24dp"
+        app:em_outside_margin="24dp"
+        app:em_shadow_color="@color/black"
+        app:em_text_color="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "916950707460",
+    "firebase_url": "https://initializer-3122c.firebaseio.com",
+    "project_id": "initializer-3122c",
+    "storage_bucket": "initializer-3122c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916950707460:android:ccf731485022e7d8c37451",
+        "android_client_info": {
+          "package_name": "oliveira.vinicius.initializerproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916950707460-fa2rvj7t9j51tafdaba6jkon9cgla2r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPqikrnC8t0CJ4uLon1i6Wl82DpjdW9YA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916950707460-fa2rvj7t9j51tafdaba6jkon9cgla2r5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

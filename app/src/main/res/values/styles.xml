@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/purple200</item>
+        <item name="colorPrimaryDark">@color/purple200</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="GenericDialogTheme">
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+    </style>
+
+    <style name="PositiveButton">
+        <item name="android:text">Salvar na lista</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NegativeButton">
+        <item name="android:text">Cancelar</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="CustomButton">
+        <item name="android:text">Remind Later</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

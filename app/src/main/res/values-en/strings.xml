@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">InitializerProject</string>
+    <string name="montante">Amount</string>
+    <string name="montante_de">Amount of...</string>
+    <string name="digite_o_capital">Enter the capital</string>
+    <string name="digite_a_taxa">Type the swear</string>
+    <string name="digite_o_periodo">Enter period</string>
+    <string name="juros_de">Swear...</string>
+    <string name="juro_exato">Exact swear</string>
+    <string name="juro_comercial">Comemercial Swear</string>
+    <string name="digite_o_montante">Enter the amount</string>
+    <string name="desconto_racional">Rational discount</string>
+    <string name="valor_real">Real value</string>
+    <string name="desconto_comercial">Commercial discount</string>
+    <string name="valor_descontado_comercial">Commercial discounted value</string>
+    <string name="para_qual_periodo">Which period?</string>
+    <string name="digite_o_per_odo_atual">Enter the annual period</string>
+    <string name="digite_a_taxa_administrativa">Enter administrative fee</string>
+    <string name="digite_a_capitaliza_o">Type the capitalization</string>
+    <string name="digite_seu_email">Type your email</string>
+    <string name="digite_sua_senha">Typer your password</string>
+    <string name="conta_adicionada">Operation added to your list!</string>
+    <string name="conta_nao_possivel_adicionar">Error!</string>
+    <string name="como_deseja_proceder">How to continue?</string>
+    <string name="preencha_corretamente">Please fill in correctly to make the calculation.</string>
+    <string name="erro_ao_consultar">Error.</string>
+    <string name="home">Home</string>
+    <string name="minha_lista">My list</string>
+    <string name="conta">Account</string>
+    <string name="nao_ha_operacoes">No system operations!</string>
+    <string name="operacao_removida">Operation successfully removed!</string>
+    <string name="recurso_indisponivel">In construction....</string>
+    <string name="construcao">Construction</string>
+    <string name="info">Info</string>
+</resources>

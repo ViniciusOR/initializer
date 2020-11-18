@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/buttonJurosCompostos"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@drawable/ic_action_beta"
+            android:paddingTop="20dp"
+            android:text="Juros Compostos"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/buttonMontante"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/buttonJurosCompostos"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@drawable/ic_action_name"
+            android:paddingTop="15dp"
+            android:text="@string/montante"
+            android:textSize="10dp"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/buttonJuroExato"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/buttonJurosCompostos"
+            android:background="@drawable/circle"
+            android:drawableTop="@drawable/ic_action_pillar"
+            android:paddingTop="20dp"
+            android:text="Juro Exato"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/buttonDescontoRacional"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@drawable/ic_action_pillar_base"
+            android:paddingTop="20dp"
+            android:text="Desconto Racional"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/buttonJuroComercial"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@id/buttonDescontoRacional"
+            android:background="@drawable/circle"
+            android:drawableTop="@drawable/ic_action_pillar_capital"
+            android:paddingTop="20dp"
+            android:text="Juro Comercial"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/buttonTaxaProporcional"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/buttonDescontoRacional"
+            android:background="@drawable/circle"
+            android:drawableTop="@drawable/ic_action_lambda"
+            android:paddingTop="20dp"
+            android:text="Taxa Proporcional"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/buttonDescontoComercial"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/buttonDescontoRacional"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="225dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@drawable/ic_action_omega"
+            android:paddingTop="20dp"
+            android:text="Desconto Comercial"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/buttonDescontoBancario"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/buttonDescontoRacional"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="225dp"
+            android:layout_toLeftOf="@id/buttonDescontoComercial"
+            android:background="@drawable/circle"
+            android:drawableTop="@drawable/ic_action_helmet"
+            android:paddingTop="20dp"
+            android:text="Desconto Bancário"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/buttonTaxaEfetiva"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/buttonDescontoRacional"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="225dp"
+            android:layout_toRightOf="@id/buttonDescontoComercial"
+            android:background="@drawable/circle"
+            android:drawableTop="@drawable/ic_action_triskelion"
+            android:paddingTop="20dp"
+            android:text="Taxa Efetiva"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+
+
+
+    </RelativeLayout>
+
+
+    <pro.midev.expandedmenulibrary.ExpandedMenuView
+        android:id="@+id/expandableMenuViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:em_background_color="@drawable/background_menu"
+        app:em_close_menu_icon="@drawable/ic_close_black_24dp"
+        app:em_font_family="casual"
+        app:em_is_on_click_closable="true"
+        app:em_menu_icon="@drawable/ic_format_list_bulleted_black_24dp"
+        app:em_outside_margin="24dp"
+        app:em_shadow_color="@color/black"
+        app:em_text_color="@android:color/white"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

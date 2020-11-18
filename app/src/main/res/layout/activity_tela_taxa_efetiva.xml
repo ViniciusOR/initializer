@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaTaxaEfetiva"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/telaTaxaEfetivaEditTextCapitalizacoes"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/digite_a_capitaliza_o"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/telaTaxaEfetivaEditTextMontante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/telaTaxaEfetivaEditTextMontante"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/digite_o_montante"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/telaTaxaEfetivaEditTextTaxa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/telaTaxaEfetivaEditTextTaxa"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/digite_a_taxa"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/telaTaxaEfetivaEditTextPeriodo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/telaTaxaEfetivaEditTextPeriodo"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/digite_o_periodo"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/telaTaxaEfetivaButtonCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/telaTaxaEfetivaButtonCalcular"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/background_button"
+        android:text="Calcular!"
+        android:layout_marginBottom="255dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/telaTaxaEfetivaButtonLimpar"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_button_delete"
+        android:text="Limpar!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telaTaxaEfetivaButtonCalcular" />
+
+    <TextView
+        android:id="@+id/telaTaxaEfetivaTextViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="casual"
+        android:text="@string/montante_de"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

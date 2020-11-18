@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaDescontoComercial"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/telaDescontoComercialEditTextMontante"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:maxLength="5"
+        android:fontFamily="casual"
+        android:hint="@string/digite_o_montante"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/telaDescontoComercialEditTextTaxa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/telaDescontoComercialEditTextTaxa"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:maxLength="5"
+        android:fontFamily="casual"
+        android:hint="@string/digite_a_taxa"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/telaDescontoComercialEditTextPeriodo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/telaDescontoComercialEditTextPeriodo"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_background"
+        android:maxLength="5"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/digite_o_periodo"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/telaDescontoComercialButtonCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/telaDescontoComercialButtonCalcular"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/background_button"
+        android:text="Calcular!"
+        android:layout_marginBottom="255dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/telaDescontoComercialButtonLimpar"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_button_delete"
+        android:text="Limpar!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telaDescontoComercialButtonCalcular" />
+
+    <TextView
+        android:id="@+id/telaDescontoComercialTextViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/telaDescontoComercialTextViewValorComercial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
